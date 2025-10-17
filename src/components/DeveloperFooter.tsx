@@ -22,7 +22,7 @@ const DeveloperFooter = () => {
             className="text-center md:text-left"
           >
             <h3 className="font-heading text-xl font-bold mb-2">Himanshu Makwana</h3>
-            <p className="text-muted-foreground text-sm">MERN Stack Developer</p>
+            <p className="text-muted-foreground text-sm">Senior MERN Stack Developer</p>
           </motion.div>
 
           <motion.div

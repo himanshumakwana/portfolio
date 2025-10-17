@@ -2,7 +2,11 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Download, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const DeveloperHero = () => {
+interface DeveloperHeroProps {
+  handleScroll: () => void;
+}
+
+const DeveloperHero = ({ handleScroll }: DeveloperHeroProps) => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -55,7 +59,7 @@ const DeveloperHero = () => {
               whileHover={{ scale: 1.05 }}
             >
               <span className="text-primary font-semibold text-sm">
-                MERN Stack Developer
+                Senior MERN Stack Developer
               </span>
             </motion.div>
             
@@ -83,6 +87,7 @@ const DeveloperHero = () => {
               variant="default"
               size="lg"
               className="group shadow-glow hover:shadow-glow"
+              onClick={handleScroll}
             >
               View Projects
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -98,7 +103,7 @@ const DeveloperHero = () => {
             className="flex gap-6 justify-center items-center pt-8"
           >
             <motion.a
-              href="https://github.com"
+              href="https://github.com/himanshumakwana"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all border border-border hover:border-primary hover:shadow-glow"
@@ -109,7 +114,7 @@ const DeveloperHero = () => {
               <Github className="w-6 h-6" />
             </motion.a>
             <motion.a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/himanshu-makwana-info"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-card hover:bg-primary hover:text-primary-foreground transition-all border border-border hover:border-primary hover:shadow-glow"
@@ -134,9 +139,9 @@ const DeveloperHero = () => {
             variants={itemVariants}
             className="pt-12"
           >
-            <p className="text-sm text-muted-foreground mb-4">5.5 years of experience</p>
+            <p className="text-sm text-muted-foreground mb-4">5.5+ years of experience</p>
             <div className="flex flex-wrap gap-3 justify-center max-w-2xl mx-auto">
-              {["React", "Node.js", "MongoDB", "Azure", "AWS", "Docker", "Kubernetes"].map(
+              {["ReactJS", "NodeJS", "MongoDB", "Azure", "AWS", "Docker", "Kubernetes"].map(
                 (tech, index) => (
                   <motion.span
                     key={tech}

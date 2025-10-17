@@ -50,7 +50,7 @@ const DeveloperAbout = () => {
           >
             <p className="font-body text-lg leading-relaxed text-muted-foreground">
               I'm a <span className="text-primary font-semibold">MERN Stack Developer</span> with over{" "}
-              <span className="text-primary font-semibold">5.5 years of experience</span> building
+              <span className="text-primary font-semibold">5.5+ years of experience</span> building
               scalable, optimized, and high-performance web applications.
             </p>
             <p className="font-body text-lg leading-relaxed text-muted-foreground">
