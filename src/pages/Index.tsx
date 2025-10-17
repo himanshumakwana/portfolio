@@ -1,19 +1,23 @@
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Projects from "@/components/Projects";
-import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
+import ThemeToggle from "@/components/ThemeToggle";
+import DeveloperHero from "@/components/DeveloperHero";
+import DeveloperAbout from "@/components/DeveloperAbout";
+import Skills from "@/components/Skills";
+import DeveloperProjects from "@/components/DeveloperProjects";
+import Experience from "@/components/Experience";
+import DeveloperContact from "@/components/DeveloperContact";
+import DeveloperFooter from "@/components/DeveloperFooter";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <Hero />
-      <About />
-      <Projects />
-      <Testimonials />
-      <Contact />
-      <Footer />
+    <div className="min-h-screen bg-background text-foreground">
+      <ThemeToggle />
+      <DeveloperHero />
+      <DeveloperAbout />
+      <Skills />
+      <DeveloperProjects />
+      <Experience />
+      <DeveloperContact />
+      <DeveloperFooter />
     </div>
   );
 };

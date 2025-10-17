@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         heading: ['Poppins', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -105,10 +106,12 @@ export default {
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-soft': 'var(--gradient-soft)',
+        'gradient-accent': 'var(--gradient-accent)',
       },
       boxShadow: {
         'soft': 'var(--shadow-soft)',
         'card': 'var(--shadow-card)',
+        'glow': 'var(--shadow-glow)',
       },
     },
   },
