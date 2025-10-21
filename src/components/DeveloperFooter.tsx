@@ -5,8 +5,8 @@ const DeveloperFooter = () => {
   const currentYear = new Date().getFullYear();
 
   const socials = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/himanshumakwana", label: "GitHub" },
+    { icon: Linkedin, href: "https://linkedin.com/in/himanshu-makwana-info", label: "LinkedIn" },
     { icon: Mail, href: "mailto:hm896292@gmail.com", label: "Email" },
   ];
 
